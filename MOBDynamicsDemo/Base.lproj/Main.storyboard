@@ -277,10 +277,10 @@
             </objects>
             <point key="canvasLocation" x="1118" y="807"/>
         </scene>
-        <!--View Controller - Attachments-->
+        <!--Attachments View Controller - Attachments-->
         <scene sceneID="bxD-h0-5wI">
             <objects>
-                <viewController id="8hI-FI-jcV" sceneMemberID="viewController">
+                <viewController id="8hI-FI-jcV" customClass="MOBAttachmentsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zsA-ep-5u1"/>
                         <viewControllerLayoutGuide type="bottom" id="68a-E6-xL1"/>
@@ -288,9 +288,55 @@
                     <view key="view" contentMode="scaleToFill" id="5vy-c2-KcK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIg-i8-VR9">
+                                <rect key="frame" x="10" y="78" width="300" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyQ-aQ-KoV">
+                                        <rect key="frame" x="179" y="70" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="8hI-FI-jcV" eventType="touchUpInside" id="8Z0-RD-iRV"/>
+                                            <action selector="buttonPressed:" destination="uXA-H1-EYA" eventType="touchUpInside" id="HsH-zH-xac"/>
+                                            <action selector="buttonPressed:" destination="JeJ-xM-TKE" eventType="touchUpInside" id="Zjy-Wb-dux"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTz-Vv-sWo">
+                                        <rect key="frame" x="20" y="70" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="NO">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="8hI-FI-jcV" eventType="touchUpInside" id="Og6-Lf-QpZ"/>
+                                            <action selector="buttonPressed:" destination="uXA-H1-EYA" eventType="touchUpInside" id="ihU-3t-lDY"/>
+                                            <action selector="buttonPressed:" destination="JeJ-xM-TKE" eventType="touchUpInside" id="xVo-L2-AoE"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a very important message." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrQ-il-4fa">
+                                        <rect key="frame" x="22" y="33" width="257" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Attachments" id="a9C-6V-MQA"/>
+                    <connections>
+                        <outlet property="alertView" destination="rIg-i8-VR9" id="wdO-78-R0L"/>
+                        <outlet property="view" destination="5vy-c2-KcK" id="exD-7A-0j1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYp-cu-wSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
