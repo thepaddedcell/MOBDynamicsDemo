@@ -22,6 +22,7 @@
 		E6A2104E17B8D1F800B40B13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6A2104C17B8D1F800B40B13 /* InfoPlist.strings */; };
 		E6A2105017B8D1F800B40B13 /* MOBDynamicsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A2104F17B8D1F800B40B13 /* MOBDynamicsDemoTests.m */; };
 		E6A2105B17B8F6C800B40B13 /* MOBGravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A2105A17B8F6C800B40B13 /* MOBGravityViewController.m */; };
+		E6A2105E17B8FF0000B40B13 /* MOBCollisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A2105D17B8FF0000B40B13 /* MOBCollisionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		E6A2104F17B8D1F800B40B13 /* MOBDynamicsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBDynamicsDemoTests.m; sourceTree = "<group>"; };
 		E6A2105917B8F6C800B40B13 /* MOBGravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBGravityViewController.h; sourceTree = "<group>"; };
 		E6A2105A17B8F6C800B40B13 /* MOBGravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBGravityViewController.m; sourceTree = "<group>"; };
+		E6A2105C17B8FF0000B40B13 /* MOBCollisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBCollisionViewController.h; sourceTree = "<group>"; };
+		E6A2105D17B8FF0000B40B13 /* MOBCollisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBCollisionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				E6A2102B17B8D1F800B40B13 /* Supporting Files */,
 				E6A2105917B8F6C800B40B13 /* MOBGravityViewController.h */,
 				E6A2105A17B8F6C800B40B13 /* MOBGravityViewController.m */,
+				E6A2105C17B8FF0000B40B13 /* MOBCollisionViewController.h */,
+				E6A2105D17B8FF0000B40B13 /* MOBCollisionViewController.m */,
 			);
 			path = MOBDynamicsDemo;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A2105E17B8FF0000B40B13 /* MOBCollisionViewController.m in Sources */,
 				E6A2105B17B8F6C800B40B13 /* MOBGravityViewController.m in Sources */,
 				E6A2103117B8D1F800B40B13 /* main.m in Sources */,
 				E6A2103B17B8D1F800B40B13 /* MOBViewController.m in Sources */,

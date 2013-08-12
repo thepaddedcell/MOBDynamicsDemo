@@ -170,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="614" y="-702"/>
         </scene>
-        <!--View Controller - Collision-->
+        <!--Collision View Controller - Collision-->
         <scene sceneID="Qhm-X8-hJB">
             <objects>
-                <viewController storyboardIdentifier="Attachments" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JeJ-xM-TKE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Attachments" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JeJ-xM-TKE" customClass="MOBCollisionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gMR-LN-mMq"/>
                         <viewControllerLayoutGuide type="bottom" id="GO4-sB-2zI"/>
@@ -181,9 +181,59 @@
                     <view key="view" contentMode="scaleToFill" id="hit-Qj-r4e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jEj-Bw-kUu">
+                                <rect key="frame" x="10" y="80" width="300" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1d-Wo-9hS">
+                                        <rect key="frame" x="179" y="70" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="JeJ-xM-TKE" eventType="touchUpInside" id="79l-eQ-hjH"/>
+                                            <action selector="buttonPressed:" destination="uXA-H1-EYA" eventType="touchUpInside" id="lI6-wY-su2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toe-Uk-UiH">
+                                        <rect key="frame" x="20" y="70" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="NO">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="JeJ-xM-TKE" eventType="touchUpInside" id="QqG-0h-tBO"/>
+                                            <action selector="buttonPressed:" destination="uXA-H1-EYA" eventType="touchUpInside" id="YSq-2M-aty"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a very important message." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK3-ob-ltI">
+                                        <rect key="frame" x="22" y="33" width="257" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ea-Is-jEP">
+                                <rect key="frame" x="0.0" y="335" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.59607843140000005" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Collision" id="l54-bV-wvs"/>
+                    <connections>
+                        <outlet property="alertView" destination="jEj-Bw-kUu" id="K1W-sf-a6f"/>
+                        <outlet property="thinBlueLine" destination="0ea-Is-jEP" id="8aF-Rk-eWc"/>
+                        <outlet property="view" destination="hit-Qj-r4e" id="PXy-by-gW7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DaL-5R-FD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

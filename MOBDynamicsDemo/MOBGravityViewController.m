@@ -37,7 +37,7 @@
 - (void)viewTapped:(id)sender
 {
     if (self.gravityBehaviour) {
-        [self.animator removeBehavior:self.gravityBehaviour];
+        [self.animator removeAllBehaviors];
         self.alertView.center = self.view.center;
     }
 }
@@ -45,6 +45,7 @@
 - (IBAction)buttonPressed:(id)sender
 {
     self.gravityBehaviour = [[UIGravityBehavior alloc] initWithItems:@[self.alertView]];
+    self.gravityBehaviour.magnitude = 2.f;
     [self.animator addBehavior:self.gravityBehaviour];
 }
 
