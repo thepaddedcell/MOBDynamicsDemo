@@ -24,6 +24,8 @@
 		E6A2105B17B8F6C800B40B13 /* MOBGravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A2105A17B8F6C800B40B13 /* MOBGravityViewController.m */; };
 		E6A2105E17B8FF0000B40B13 /* MOBCollisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A2105D17B8FF0000B40B13 /* MOBCollisionViewController.m */; };
 		E6A2106117B9043C00B40B13 /* MOBAttachmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A2106017B9043C00B40B13 /* MOBAttachmentsViewController.m */; };
+		E6A2106417B98D6F00B40B13 /* MOBSnapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A2106317B98D6F00B40B13 /* MOBSnapViewController.m */; };
+		E6A2106717B9909100B40B13 /* MOBPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A2106617B9909100B40B13 /* MOBPushViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		E6A2105D17B8FF0000B40B13 /* MOBCollisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBCollisionViewController.m; sourceTree = "<group>"; };
 		E6A2105F17B9043C00B40B13 /* MOBAttachmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBAttachmentsViewController.h; sourceTree = "<group>"; };
 		E6A2106017B9043C00B40B13 /* MOBAttachmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBAttachmentsViewController.m; sourceTree = "<group>"; };
+		E6A2106217B98D6F00B40B13 /* MOBSnapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBSnapViewController.h; sourceTree = "<group>"; };
+		E6A2106317B98D6F00B40B13 /* MOBSnapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBSnapViewController.m; sourceTree = "<group>"; };
+		E6A2106517B9909100B40B13 /* MOBPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBPushViewController.h; sourceTree = "<group>"; };
+		E6A2106617B9909100B40B13 /* MOBPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBPushViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,10 @@
 				E6A2105D17B8FF0000B40B13 /* MOBCollisionViewController.m */,
 				E6A2105F17B9043C00B40B13 /* MOBAttachmentsViewController.h */,
 				E6A2106017B9043C00B40B13 /* MOBAttachmentsViewController.m */,
+				E6A2106217B98D6F00B40B13 /* MOBSnapViewController.h */,
+				E6A2106317B98D6F00B40B13 /* MOBSnapViewController.m */,
+				E6A2106517B9909100B40B13 /* MOBPushViewController.h */,
+				E6A2106617B9909100B40B13 /* MOBPushViewController.m */,
 			);
 			path = MOBDynamicsDemo;
 			sourceTree = "<group>";
@@ -269,8 +279,10 @@
 				E6A2105B17B8F6C800B40B13 /* MOBGravityViewController.m in Sources */,
 				E6A2103117B8D1F800B40B13 /* main.m in Sources */,
 				E6A2103B17B8D1F800B40B13 /* MOBViewController.m in Sources */,
+				E6A2106417B98D6F00B40B13 /* MOBSnapViewController.m in Sources */,
 				E6A2106117B9043C00B40B13 /* MOBAttachmentsViewController.m in Sources */,
 				E6A2103517B8D1F800B40B13 /* MOBAppDelegate.m in Sources */,
+				E6A2106717B9909100B40B13 /* MOBPushViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

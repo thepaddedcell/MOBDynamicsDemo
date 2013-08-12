@@ -239,10 +239,10 @@
             </objects>
             <point key="canvasLocation" x="1118" y="-588"/>
         </scene>
-        <!--View Controller - Push-->
+        <!--Push View Controller - Push-->
         <scene sceneID="l0z-hF-rLm">
             <objects>
-                <viewController id="Mkk-CE-h0t" sceneMemberID="viewController">
+                <viewController id="Mkk-CE-h0t" customClass="MOBPushViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6FU-76-BMz"/>
                         <viewControllerLayoutGuide type="bottom" id="uIu-Si-0b8"/>
@@ -250,18 +250,59 @@
                     <view key="view" contentMode="scaleToFill" id="HU0-IY-4y6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SEN-kV-fD5">
+                                <rect key="frame" x="71" y="223" width="179" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRd-Kk-ha6">
+                                        <rect key="frame" x="39" y="75" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="uXA-H1-EYA" eventType="touchUpInside" id="Ij4-sc-GYD"/>
+                                            <action selector="buttonPressed:" destination="Mkk-CE-h0t" eventType="touchUpInside" id="JaZ-tD-hvR"/>
+                                            <action selector="buttonPressed:" destination="8hI-FI-jcV" eventType="touchUpInside" id="YnR-jL-fp6"/>
+                                            <action selector="buttonPressed:" destination="JeJ-xM-TKE" eventType="touchUpInside" id="fFX-dG-OFk"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Woohoo!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omB-Bg-rqW">
+                                        <rect key="frame" x="55" y="33" width="69" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mQp-El-Ius">
+                                <rect key="frame" x="0.0" y="84" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20784313730000001" green="0.59607843140000005" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.20784313730000001" green="0.59607843140000005" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Push" id="cOB-DA-tqL"/>
+                    <connections>
+                        <outlet property="alertView" destination="SEN-kV-fD5" id="nCv-rs-zAL"/>
+                        <outlet property="blueBoxView" destination="mQp-El-Ius" id="HdA-0c-2nm"/>
+                        <outlet property="view" destination="HU0-IY-4y6" id="nb7-Za-hih"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4H-lr-svp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="614" y="983"/>
         </scene>
-        <!--View Controller - Snap-->
+        <!--Snap View Controller - Snap-->
         <scene sceneID="3Ic-zy-r1z">
             <objects>
-                <viewController id="fc2-uV-LVR" sceneMemberID="viewController">
+                <viewController id="fc2-uV-LVR" customClass="MOBSnapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2w8-BC-a5Q"/>
                         <viewControllerLayoutGuide type="bottom" id="sHQ-NU-PUJ"/>
@@ -269,9 +310,57 @@
                     <view key="view" contentMode="scaleToFill" id="Qfv-qG-GUC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59f-T9-Kt1">
+                                <rect key="frame" x="35" y="-322" width="250" height="122"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcT-UX-Goj">
+                                        <rect key="frame" x="130" y="70" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="YES">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="fc2-uV-LVR" eventType="touchUpInside" id="CER-Jo-7ai"/>
+                                            <action selector="buttonPressed:" destination="JeJ-xM-TKE" eventType="touchUpInside" id="Hy8-sE-n9c"/>
+                                            <action selector="buttonPressed:" destination="uXA-H1-EYA" eventType="touchUpInside" id="UqE-cz-XXf"/>
+                                            <action selector="buttonPressed:" destination="8hI-FI-jcV" eventType="touchUpInside" id="tLG-la-BV8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5C-MO-ch8">
+                                        <rect key="frame" x="20" y="70" width="100" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="NO">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="8hI-FI-jcV" eventType="touchUpInside" id="0xL-Fy-RCe"/>
+                                            <action selector="buttonPressed:" destination="fc2-uV-LVR" eventType="touchUpInside" id="XDl-kz-n3m"/>
+                                            <action selector="buttonPressed:" destination="uXA-H1-EYA" eventType="touchUpInside" id="jjz-sj-p7B"/>
+                                            <action selector="buttonPressed:" destination="JeJ-xM-TKE" eventType="touchUpInside" id="rGu-Tx-SGV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OMG!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G40-MP-Wd2">
+                                        <rect key="frame" x="22" y="33" width="208" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Snap" id="7RN-ac-jAS"/>
+                    <connections>
+                        <outlet property="alertView" destination="59f-T9-Kt1" id="JEV-dt-Ga3"/>
+                        <outlet property="view" destination="Qfv-qG-GUC" id="KJD-Ib-ovv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEM-GF-fLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

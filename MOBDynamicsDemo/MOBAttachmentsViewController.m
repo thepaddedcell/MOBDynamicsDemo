@@ -103,5 +103,4 @@
     [self.animator removeBehavior:self.rightAttachment];
 }
 
-
 @end
