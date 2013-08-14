@@ -59,6 +59,12 @@
     self.rightAttachment.frequency = 1.f;
     [self.animator addBehavior:self.rightAttachment];
     
+////***********************************************************
+//    UIDynamicItemBehavior* itemBehaviour = [[UIDynamicItemBehavior alloc] initWithItems:@[self.alertView]];
+//    itemBehaviour.allowsRotation = NO;
+//    [self.animator addBehavior:itemBehaviour];
+////***********************************************************
+    
 }
 
 - (void)viewPanned:(UIPanGestureRecognizer*)panGesture

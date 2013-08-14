@@ -47,6 +47,7 @@
     
     self.itemBehaviour = [[UIDynamicItemBehavior alloc] initWithItems:@[self.alertView]];
     self.itemBehaviour.elasticity = 1.f;
+//    self.itemBehaviour.allowsRotation = NO;
     self.itemBehaviour.friction = 1.f;
     [self.animator addBehavior:self.itemBehaviour];
 }

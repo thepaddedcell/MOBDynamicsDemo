@@ -38,7 +38,15 @@
 - (void)setupSnapBehaviour
 {
     self.snapBehaviour = [[UISnapBehavior alloc] initWithItem:self.alertView snapToPoint:self.view.center];
+//    self.snapBehaviour.damping = 0.1f;
     [self.animator addBehavior:self.snapBehaviour];
+    
+////***********************************************************
+//    UIDynamicItemBehavior* itemBehaviour = [[UIDynamicItemBehavior alloc] initWithItems:@[self.alertView]];
+//    itemBehaviour.allowsRotation = NO;
+//    [self.animator addBehavior:itemBehaviour];
+////***********************************************************
+
 }
 
 - (void)buttonPressed:(id)sender
